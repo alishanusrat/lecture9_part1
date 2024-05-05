@@ -1,0 +1,43 @@
+.button
+{
+	display:block;
+	padding: 2.5px;
+    background-color: powderblue;
+}
+.container
+{
+	width:700px;
+	height:400px;
+	overflow:hidden;
+}
+.header
+{   width:700px;
+	height:150px;
+	background-image:url("image/flower.jpg") ;
+	background-color: palegreen;
+}
+.footer
+{   width:700px;
+	height:150px;
+	background-color: darkseagreen;
+}
+.blog
+{
+	width:70%;
+	height:400px;
+	background-color: dodgerblue;
+	float:left;
+
+}
+.contact
+{
+	width:30%;
+	height:400px;
+	background-color: grey;
+	float:right;
+
+}
+video
+{
+	padding:10px;
+}

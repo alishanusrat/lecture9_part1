@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lecture9(html reference)</title>
+	<link rel="stylesheet" href="css/may2.css">
+</head>
+<body>
+	<h2>Use of wrb</h2>
+	<p>TherearemanyvariationsofpassagesofLoremIpsum<wbr>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavailable,</p>
+		<h2>Video</h2>
+		<video  width="300px" height="270px"controls>
+			<!--<source src="https://videos.pexels.com/video-files/3764259/3764259-hd_1280_720_60fps.mp4">-->
+				<source src="video/hqdefault.mp4">
+			<track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+			</video>
+			<!--website template-->
+			<h2>Website template</h2>
+			<div class="header"></div>
+             <div class="container">
+
+            <div class="blog"></div>
+           <div class="contact"></div>
+           </div>
+            <div class="footer"></div>
+            </div>
+<br>
+<h2>Use of Onclick button</h2>
+<!--use of onclick button-->
+			<button onclick="showContent()" class="button">Click to see flower</button>
+			<template>
+				<p>This pink flower is a tremendous beauty. <br>Every human loves a flower except those who are not soft hearted.</p>
+				<img width="500px" height="250px"src="image/flower.jpg">
+			</template>
+			<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+<svg width="300" height="300">
+  <circle cx="100" cy="100" r="70" stroke="green" stroke-width="4" fill="yellow" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+<!--small-->
+<h2>Small element</h2>
+<small>Yes,small text</small>
+ <!--select-->
+<h2>Use of select element</h2>
+
+<form>
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<!--search element-->
+<h2>Search elemenet</h2>
+<search>
+<form>
+<input type="text" name="seacrh" id="search" placeholder="Enrol in your desire">
+</form>
+</search>
+<!--Use of samp-->
+<h2>Use of samp</h2>
+<samp>File not found.<br>Press F1 to continue</samp>
+<!--picture-->
+<h2>picture element</h2>
+<picture>
+  <source media="(min-width:650px)" srcset="image/flower.jpg">
+  </picture>
+<!--legend element use-->
+<h2>legend element </h2>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Info:</legend>
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Roll:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+</body>
+</html>
